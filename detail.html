@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #display{
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    #respo{
+        width: 100%;
+    }
+  p{
+
+    width: 100%;
+  }
+
+  #add{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #roll{
+    width: 100%;
+  }
+
+  #footer{
+    width: 100%;
+  }
+
+  #text{
+    margin-left: 0px;
+    font-size: 19px;
+
+  }
+
+    @media only screen and (max-width:500px){
+        #display{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #respo{
+        width: 760px;
+    }
+    p{
+
+width: 735px;
+}
+
+#add{
+    width: 500px;
+    margin-left: 194px;
+  }
+
+  #roll{
+    width: 750px;
+  }
+  #footer{
+    width: 760px;
+  }
+  
+  #text{
+    font-size: 42px;
+    margin-left: 500px;
+
+  }
+
+    }
+    
+</style>
+<body>
+    <section>
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html"><img src="img/flip.jpeg" width="120px"></a>
+
+            </div>
+            <div class="logo">
+                <form>
+                    <table border="0" cellspacing="0" cellpadding:2>
+                        <tr>
+                            <td><input type="text"  style="height: 31px;" size="25" placeholder="search"></td>
+                            <td><input type="image" " name="submit" src="img/search.gif" width="30px" style="margin-top: 5px;"></td>
+                           </tr>
+                    </table>
+             
+                </form>
+            </div>
+            <div class="logo"><input type="button"  style="padding: 8px; background-color: #042742; color:antiquewhite" name="login" value="Login"></div>
+            <div class="logo"><input type="button" name="login" style="padding: 8px;background-color: #042742; color: antiquewhite;" value="Become a seller"></div>
+            <div class="logo"><input type="image" src="img/cart-removebg-preview.png" width="55px"></div>
+        </div>
+    </section>
+    <section>
+        <div class="header-menu">
+            <div class="logo"><input type="button"   style="padding: 8px; background-color: #a26306; color:antiquewhite" name="login" value="Electronics"></div>
+            <div class="logo"><input type="button"  style="padding: 8px; background-color: #a26306; color:antiquewhite" name="login" value="Men"></div>
+            <div class="logo"><input type="button"  style="padding: 8px; background-color: #a26306; color:antiquewhite" name="login" value="Women"></div>
+            <div class="logo"><input type="button" name="login" style="padding: 8px;background-color: #a26306; color: antiquewhite;" value="Boys&kids"></div>
+            <div class="logo"><input type="button" name="login" style="padding: 8px;background-color: #a26306; color: antiquewhite;" value="Tv&Appliances"></div>
+            <div class="logo"><input type="button" name="login" style="padding: 8px;background-color: #a26306; color: antiquewhite;" value="Flight"></div>
+            <div class="logo"><input type="button" name="login" style="padding: 8px;background-color: #a26306; color: antiquewhite;" value="Sports"></div>
+            <div class="logo"><input type="button" name="login" style="padding: 8px;background-color: #a26306; color: antiquewhite;" value="Home&Furniture"></div>
+            <div class="logo"><input type="button" name="login" style="padding: 8px;background-color: #a26306; color: antiquewhite;" value="Offer Zone"></div>
+        </div>
+    </section>
+    <section>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; padding-left: 250px;padding-right: 250px;" id="display">
+            <div class="detail">
+                <img src="img/det.webp" onmouseover="expand()" onmouseout="small()" id="hover">
+            </div>
+            <div class="detail">
+                <b>SAMSUNG Galaxy S22 5G (Phantom White, 128 GB)  (8 GB RAM)</b>
+                <ul style="list-style: none; line-height: 35px;">
+                    <li>8 GB RAM | 128 GB ROM</li>
+                    <li>15.49cm(6.1 inch) Full HD </li>
+                    <li>Display 50 MP +12 MP + 10 MP | 10 MP Front Camera</li>
+                    <li>3700 mah Lithium-ion Battery</li>
+                    <li>1 Year Manufacture Warranty For Device and 6 Months Manufacturer Warranty for in-Box Accessories</li>
+                    <li>Snapdragon 8 Generation 1 Processor</li>
+                    <li>price ₹19999</li>
+                </ul>
+                <button onclick=" res()">Buy Now</button>
+                <button  id="calcu">Add To Cart</button>
+                <input type="text"  placeholder="quantity" name="price" id="rate" readonly>
+                <button onclick="price()">Price</button><input type="text"  placeholder="₹" name="price" id="price" readonly>
+            </div>
+        </div>
+    </section>
+    
+    <section style="margin-top: 20px;">
+      
+        <div class="main-2">
+            <div class="" style="width: 430px;">
+             <img src="img/1.webp" width="100%" id="add">
+   
+            
+            </div>
+            <div class=""  style="width: 430px;">
+                <img src="img/2.webp" width="100%" id="add">
+        
+               
+               </div>
+               <div class=""  style="width: 430px;" >
+                <img src="img/3.webp" width="100%" id="add">
+     
+               
+               </div>
+            
+          
+           
+              
+        </div>
+    </section>
+
+    <section>
+        <div style="width: 100%; height: auto;">
+            <img src="img/ban1.webp" width="100%" id="roll">
+        </div>
+    </section>
+    <section>
+        <div style="width: 100%; height: auto;">
+            <img src="img/download1.webp" width="100%" id="roll">
+        </div>
+    </section>
+    <section>
+        <div style="width: 100%; height: auto;">
+            <img src="img/download2.webp" width="100%"id="roll">
+        </div>
+    </section>
+    <section>
+        <div style="width: 100%; height: auto;">
+            <img src="img/download3.webp" width="100%" id="roll">
+        </div>
+    </section>
+    
+   
+    
+   
+
+    <script>
+ 
+
+      
+        function res(){
+         
+
+            alert("You have successfully purchased the item ")
+          
+            
+            
+        }
+
+        function price(){
+            const price = 19999;
+            var x = document.getElementById("rate").value;
+            if(x == 1){
+                document.getElementById("price").value = price + "₹";
+            }else if(x == 2){
+                document.getElementById("price").value = 2*price + "₹";
+            }else if(x == 3){
+                document.getElementById("price").value = 3*price + "₹";
+            }else if(x == 4){
+                document.getElementById("price").value = 4*price + "₹";
+            }else if(x == 5){
+                document.getElementById("price").value = 5*price + "₹";
+            }else if(x == 6){
+                document.getElementById("price").value = 6*price + "₹";
+            }else if(x == 7){
+                document.getElementById("price").value = 7*price + "₹";
+            }else if(x == 8){
+                document.getElementById("price").value = 8*price + "₹";
+            }else if(x == 9){
+                document.getElementById("price").value = 9*price + "₹";
+            }else if(x == 10){
+                document.getElementById("price").value = 10*price + "₹";
+            }else{
+                document.getElementById("price").value = 0 + "₹";
+            }
+
+
+        }
+
+  var counter = 1;
+  var calc = document.getElementById("calcu");
+  calc.onclick = function(){
+    if(counter<=10){
+        document.getElementById("rate").value = counter;
+ 
+         counter++;
+    }else{
+        document.getElementById("rate").value = 10;
+        alert("you cannot add more than 10 items")
+    }
+  
+  }
+
+  function expand(){
+    document.getElementById("hover").src = "img/mob2.jpeg";
+    document.getElementById("hover").width = 230;
+    document.getElementById("hover").height = 330;
+}
+function small(){
+    document.getElementById("hover").src = "img/mob2.jpeg";
+    document.getElementById("hover").width = 200;
+    document.getElementById("hover").height = 300;
+}
+    </script>
+  
+</body>
+</html>
